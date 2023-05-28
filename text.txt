@@ -1,0 +1,40 @@
+sudo geth --datadir node1 --port 30306 --nat extip:127.0.0.1 --networkid 14333 --unlock 0xF24a31Fc6b232fF01Ee0138E1C328844f559e633 --syncmode 'full' --graphql --graphql.corsdomain "" --graphql.vhosts "127.0.0.1" --http --http.addr "0.0.0.0" --http.vhosts "127.0.0.1" --allow-insecure-unlock --http.corsdomain "" --authrpc.port 8545 --unlock 0xF24a31Fc6b232fF01Ee0138E1C328844f559e633 --password node1/password.txt --mine --miner.threads=1 --miner.etherbase=0xF24a31Fc6b232fF01Ee0138E1C328844f559e633
+
+sudo geth --datadir node1 --port 30306 --bootnodes enode://01c633d2776b01af1bd6ee381d9db51f01d330675dfe22117016d568c5b78ad9b8e080f244b15178d634ea61e039be9d65bf11f6a1fad061788e64b8f555416f@127.0.0.1:0?discport=30305  --networkid 14333 --unlock 0xAfE6BBFD4Ed5f74e0A716ADa2787dE4cAcC1195e --ipcdisable --syncmode 'full' --graphql --graphql.corsdomain "" --graphql.vhosts "127.0.0.1" --http --http.addr "0.0.0.0" --http.vhosts "127.0.0.1" --allow-insecure-unlock --http.corsdomain "" --authrpc.port 8547 --unlock 0x7caF1F4cE525C9DA6095573b515B06a60b19C320 --password node1/password.txt --mine --miner.threads=1 --miner.etherbase=0x7caF1F4cE525C9DA6095573b515B06a60b19C320
+
+sudo geth --datadir node1 --port 30306 --nat extip:118.179.189.244 --networkid 14333 --unlock 0x7caF1F4cE525C9DA6095573b515B06a60b19C320 --syncmode 'full' --graphql --graphql.corsdomain "" --graphql.vhosts "118.179.189.244" --http --http.addr "0.0.0.0" --http.vhosts "118.179.189.244" --allow-insecure-unlock --http.corsdomain "" --authrpc.port 8547 --unlock 0x7caF1F4cE525C9DA6095573b515B06a60b19C320 --password node1/password.txt --mine --miner.threads=1 --miner.etherbase=0x7caF1F4cE525C9DA6095573b515B06a60b19C320
+
+sudo geth --datadir node2 --port 30307 --bootnodes enode://01c633d2776b01af1bd6ee381d9db51f01d330675dfe22117016d568c5b78ad9b8e080f244b15178d634ea61e039be9d65bf11f6a1fad061788e64b8f555416f@127.0.0.1:0?discport=30305  --networkid 14333 --unlock 0xAfE6BBFD4Ed5f74e0A716ADa2787dE4cAcC1195e --ipcdisable --syncmode 'full' --graphql --graphql.corsdomain "" --graphql.vhosts "127.0.0.1" --http.vhosts "127.0.0.1" --allow-insecure-unlock --http.corsdomain "" --authrpc.port 8546 --unlock 0xAfE6BBFD4Ed5f74e0A716ADa2787dE4cAcC1195e --password node2/password.txt --mine --miner.threads=1 --miner.etherbase=0xAfE6BBFD4Ed5f74e0A716ADa2787dE4cAcC1195e
+
+sudo geth --datadir node2 --port 30307 --bootnodes enode://7ebd73127aee412afc9ec95bf6c19363199078d1142b0180d261d82a82ef5c0aee1bf6ec9af3cf2a389f9b6752e4979eeb2f2791f8b0a180c1f3982a69ea5b48@3.109.209.119:30306 --networkid 14333 --syncmode 'full' --http --http.addr "0.0.0.0" --allow-insecure-unlock --http.corsdomain "*" --authrpc.port 8546 --unlock 0xAfE6BBFD4Ed5f74e0A716ADa2787dE4cAcC1195e --password node2/password.txt --mine --miner.threads=1 --miner.etherbase=0xAfE6BBFD4Ed5f74e0A716ADa2787dE4cAcC1195e
+
+
+
+
+
+
+geth --datadir node1 --port 30305 --bootnodes enode://01c633d2776b01af1bd6ee381d9db51f01d330675dfe22117016d568c5b78ad9b8e080f244b15178d634ea61e039be9d65bf11f6a1fad061788e64b8f555416f@127.0.0.1:0?discport=30305 --networkid 1433 --unlock 0xF24a31Fc6b232fF01Ee0138E1C328844f559e633 --password node1/password.txt --authrpc.port 8545 --mine --miner.threads=1 --miner.etherbase=0xF24a31Fc6b232fF01Ee0138E1C328844f559e633
+
+
+==================-----------------
+
+
+0xa9aE5Bf4eb0FB7E074cFd309AeDbeAA187F73c72
+
+enode://02ea9fa46c49b1ffb2987ec71ab7902cbd1876ae28788a58ab71e3a2aa7cdb919390cbfe18d7fceed4fbd5c4ea69f9a8651dcb1a84d039218c48e24acf7805fe@127.0.0.1:0?discport=30305
+
+sudo geth --datadir node1 --port 30307 --bootnodes enode://02ea9fa46c49b1ffb2987ec71ab7902cbd1876ae28788a58ab71e3a2aa7cdb919390cbfe18d7fceed4fbd5c4ea69f9a8651dcb1a84d039218c48e24acf7805fe@127.0.0.1:0?discport=30305 --networkid 12345 --syncmode 'full' --http --allow-insecure-unlock --http.corsdomain "*" --authrpc.port 8546 --unlock 0xa9aE5Bf4eb0FB7E074cFd309AeDbeAA187F73c72 --password node1/password.txt --mine --miner.threads=1 --miner.etherbase=0xa9aE5Bf4eb0FB7E074cFd309AeDbeAA187F73c72
+
+geth --datadir node2 account new
+geth init --datadir node2 genesis.json
+
+
+0x5b5c9b090c12174296213C84B10130Dc31B80975
+
+sudo geth --datadir node2 --port 30306 --bootnodes enode://02ea9fa46c49b1ffb2987ec71ab7902cbd1876ae28788a58ab71e3a2aa7cdb919390cbfe18d7fceed4fbd5c4ea69f9a8651dcb1a84d039218c48e24acf7805fe@127.0.0.1:0?discport=30305 --networkid 12345 --syncmode 'full' --http --allow-insecure-unlock --http.corsdomain "*" --http.addr "0.0.0.0" --authrpc.port 8547 --unlock 0x5b5c9b090c12174296213C84B10130Dc31B80975 --password node2/password.txt --mine --miner.threads=1 --miner.etherbase=0x5b5c9b090c12174296213C84B10130Dc31B80975
+
+
+
+=====
+
+
